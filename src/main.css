@@ -1,0 +1,167 @@
+body {
+  background-color: #000000;
+}
+
+a.nav-link.active {
+  margin-right: 8rem;
+}
+
+a.nav-link {
+  margin-right: 8rem;
+}
+
+.h1 {
+  color: white;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bg-light {
+  background-color: #000000 !important;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+  padding: 1rem;
+}
+
+.navbar-light .navbar-brand {
+  color: rgb(255 255 255 / 90%);
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(255, 255, 255);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgb(75, 255, 75);
+}
+
+.btn-outline-success {
+  color: #ffffff;
+  border-color: #3fff00;
+}
+
+button.btn.btn-outline-success {
+  margin-left: 1rem;
+}
+
+.w-100 {
+  width: 85% !important;
+  height: 42rem;
+  padding-left: 14%;
+  margin-top: 2rem;
+  padding-bottom: 7rem;
+}
+
+.carousel-indicators {
+  bottom: 120px;
+}
+.card {
+  margin-top: 30px;
+  width: 18%;
+  margin-left: 11%;
+  border-radius: 5%;
+}
+.card:hover {
+  box-shadow: 0 6px 10px rgb(255, 255, 255), 0 0 6px rgb(255, 255, 255);
+}
+
+.card-img {
+  height: 100px;
+  width: 150px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+a.btn.btn-primary {
+  margin-left: 4.5rem;
+}
+
+a.btn.btn-primary:hover {
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.btnCheckIn {
+  margin-left: 60px;
+}
+.navbar-brand {
+  font-weight: bold;
+}
+
+button.btn.btn-primary {
+  /* justify-content: center; */
+  margin-left: 44.5rem;
+  margin-top: 3rem;
+}
+.modal-title {
+  margin-left: auto;
+  font-weight: bold;
+}
+button.btn.btn-secondary {
+  margin-right: auto;
+}
+
+button.btn.btn-dark {
+  margin-left: 10rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-color: rgb(8, 184, 23);
+  border: none;
+  margin-top: 2rem;
+}
+
+.fb {
+  margin-left: 4rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  margin-bottom: 1rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  background: #3a5a97;
+  color: white;
+  border: none;
+  margin-top: 2rem;
+}
+.Gg {
+  margin-left: 4rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  margin-bottom: 1rem;
+  padding-left: 6rem;
+  padding-right: 7rem;
+  background-color: #c01019;
+  color: white;
+  border: none;
+  margin-top: 0.2rem;
+}
+
+@media (max-width: 1118px) {
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    width: max-content;
+    width: 135vh;
+  }
+
+  /* form.d-flex {
+    padding-left: 16rem;
+  }
+  */
+
+  .collapse.navbar-collapse.show {
+    margin-left: 4rem;
+  }
+}

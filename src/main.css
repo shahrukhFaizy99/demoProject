@@ -140,6 +140,7 @@ button.btn.btn-primary {
   /* justify-content: center; */
   margin-left: 46rem;
   margin-top: 3rem;
+  margin-bottom: 2rem;
 }
 .modal-title {
   margin-left: auto;
@@ -202,6 +203,24 @@ button.btn.btn-dark:hover {
 
 .form-control:hover {
   border: 1px solid green;
+}
+
+img.tafseer {
+  margin-left: 0;
+}
+
+.footer1 {
+  margin-left: 10rem;
+  margin-top: 1rem;
+}
+
+.footer2 {
+  margin-left: 10rem;
+  margin-top: 1rem;
+}
+
+.email {
+  margin-left: 9rem;
 }
 
 @media (max-width: 1118px) {

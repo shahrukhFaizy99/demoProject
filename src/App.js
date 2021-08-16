@@ -3,6 +3,7 @@ import Card from "./components/card";
 import Carousel from "./components/carousel";
 import Navbar from "./components/navbar";
 import Modal from "./components/modal";
+import Footer from "./components/footer";
 
 const App = () => {
   return (
@@ -66,6 +67,7 @@ const App = () => {
         />
       </div>
       <Modal />
+      <Footer />
     </>
   );
 };

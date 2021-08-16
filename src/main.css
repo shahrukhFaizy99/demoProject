@@ -1,5 +1,12 @@
 body {
-  background-color: #000000;
+  background-color: #1b1b1b;
+}
+
+.navbar-bg {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 a.nav-link.active {
@@ -14,10 +21,11 @@ a.nav-link {
   color: white;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
 }
 
 .bg-light {
-  background-color: #000000 !important;
+  background-color: rgb(0, 0, 0);
 }
 
 nav.navbar.navbar-expand-lg.navbar-light.bg-light {
@@ -25,34 +33,42 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 }
 
 .navbar-light .navbar-brand {
-  color: rgb(255 255 255 / 90%);
+  color: black;
 }
 
-.navbar-light .navbar-nav .nav-link.active,
+/* .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .show > .nav-link {
   color: rgba(255, 255, 255, 0.9);
 }
 
 .navbar-light .navbar-nav .nav-link {
   color: rgb(255, 255, 255);
+} */
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(0, 0, 0);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
   color: rgb(75, 255, 75);
-}
-
-.btn-outline-success {
-  color: #ffffff;
-  border-color: #3fff00;
+  /* border-bottom: 1px solid #000000; */
 }
 
 button.btn.btn-outline-success {
   margin-left: 1rem;
+  color: black;
+}
+
+button.btn.btn-outline-success:hover {
+  background-color: rgb(75, 255, 75);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .w-100 {
   width: 85% !important;
-  height: 42rem;
+  height: 45rem;
   padding-left: 14%;
   margin-top: 2rem;
   padding-bottom: 7rem;
@@ -63,23 +79,43 @@ button.btn.btn-outline-success {
 }
 .card {
   margin-top: 30px;
-  width: 18%;
+  width: 19%;
   margin-left: 11%;
-  border-radius: 5%;
+  background-color: dimgrey;
 }
-.card:hover {
-  box-shadow: 0 6px 10px rgb(255, 255, 255), 0 0 6px rgb(255, 255, 255);
-}
+/* .card:hover {
+  box-shadow: 1px 1px 1px 1px rgb(255, 255, 255, 255),
+    1px 1px 1px 1px rgb(255, 255, 255, 255);
+} */
 
-.card-img {
-  height: 100px;
+.card-body {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+  background-color: snow;
+  /* margin-top: 1rem; */
+  /* border-radius: 12px; */
+}
+/* .card-img {
+  height: 150px;
   width: 150px;
   margin: auto;
   margin-top: 10px;
+} */
+
+img.card-img {
+  height: 15rem;
+}
+
+.card-text {
+  text-align: center;
+  font-weight: initial;
 }
 
 a.btn.btn-primary {
-  margin-left: 4.5rem;
+  margin-left: 4.8rem;
+  background-color: #000000;
+  border: 1px solid black;
+  font-family: fantasy;
 }
 
 a.btn.btn-primary:hover {
@@ -96,16 +132,13 @@ a.btn.btn-primary:hover {
   text-align: center;
 }
 
-.btnCheckIn {
-  margin-left: 60px;
-}
 .navbar-brand {
   font-weight: bold;
 }
 
 button.btn.btn-primary {
   /* justify-content: center; */
-  margin-left: 44.5rem;
+  margin-left: 46rem;
   margin-top: 3rem;
 }
 .modal-title {
@@ -120,13 +153,17 @@ button.btn.btn-dark {
   margin-left: 10rem;
   padding-left: 3rem;
   padding-right: 3rem;
-  background-color: rgb(8, 184, 23);
   border: none;
   margin-top: 2rem;
 }
+button.btn.btn-dark:hover {
+  background-color: green;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
 
 .fb {
-  margin-left: 4rem;
+  margin-left: 3rem;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
   margin-bottom: 1rem;
@@ -136,9 +173,13 @@ button.btn.btn-dark {
   color: white;
   border: none;
   margin-top: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.fb:hover {
+  background-color: darkblue;
 }
 .Gg {
-  margin-left: 4rem;
+  margin-left: 3rem;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
   margin-bottom: 1rem;
@@ -148,12 +189,50 @@ button.btn.btn-dark {
   color: white;
   border: none;
   margin-top: 0.2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.Gg:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+.form-label {
+  font-family: verdana;
+  margin-bottom: 0.5rem;
+}
+
+.form-control:hover {
+  border: 1px solid green;
 }
 
 @media (max-width: 1118px) {
   nav.navbar.navbar-expand-lg.navbar-light.bg-light {
     width: max-content;
     width: 135vh;
+  }
+
+  div#carouselExampleIndicators {
+    width: 135vh;
+  }
+
+  h1.h1 {
+    width: 135vh;
+  }
+
+  .flex {
+    width: 135vh;
+  }
+
+  img.card-img {
+    width: 8rem;
+  }
+
+  button.btn.btn-primary {
+    /* justify-content: center; */
+    margin-left: 21.5rem;
+    margin-top: 3rem;
+  }
+  button.btn.btn-primary {
+    width: max-content;
   }
 
   /* form.d-flex {
